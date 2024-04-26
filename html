@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentMyCaravan.io</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to RentMyCaravan.io</h1>
+    </header>
+    
+    <main>
+        <!-- Registration Form -->
+        <section id="registration">
+            <h2>Register</h2>
+            <form action="register.php" method="POST">
+                <input type="text" name="username" placeholder="Username" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        
+        <!-- Login Form -->
+        <section id="login">
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <input type="text" name="username" placeholder="Username" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        
+        <!-- Add Caravan Form -->
+        <section id="add-caravan">
+            <h2>Add Caravan Details</h2>
+            <form action="add_caravan.php" method="POST">
+                <input type="text" name="caravan_name" placeholder="Caravan Name" required><br>
+                <!-- Add more fields as needed -->
+                <button type="submit">Add Caravan</button>
+            </form>
+        </section>
+        
+        <!-- List of Caravans -->
+        <section id="caravan-list">
+            <h2>My Caravans</h2>
+            <!-- Display list of caravans added by the user -->
+        </section>
+        
+        <!-- Edit Caravan Form -->
+        <section id="edit-caravan">
+            <h2>Edit Caravan Details</h2>
+            <form action="edit_caravan.php" method="POST">
+                <!-- Populate form with caravan details -->
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+        
+        <!-- Delete Caravan Button -->
+        <section id="delete-caravan">
+            <h2>Delete Caravan</h2>
+            <button onclick="confirmDelete()">Delete</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 RentMyCaravan.io. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
